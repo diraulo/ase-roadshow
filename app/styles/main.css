@@ -111,7 +111,7 @@ border-bottom-width: 0px;
 
 /* service icons */
 .si {
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 
 .si:hover {
