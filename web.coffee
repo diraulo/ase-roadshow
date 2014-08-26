@@ -1,6 +1,7 @@
 gzippo = require 'gzippo'
 express = require 'express'
-subscribers = require './subscribers'
+# subscribers = require './subscribers'
+
 app = express()
 app.use gzippo.staticGzip "#{__dirname}/dist"
 app.listen process.env.PORT || 5000
