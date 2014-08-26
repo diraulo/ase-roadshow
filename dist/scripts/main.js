@@ -1,1 +1,1 @@
-console.log("'Allo 'Allo!");
+console.log("'Allo 'Allo!"),$(window).scroll(function(){$(".si").each(function(){var o=$(this).offset().top,l=$(window).scrollTop();l+400>o&&$(this).addClass("slideUp")})});
