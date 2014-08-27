@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -27,7 +26,9 @@
     <!-- endbuild -->
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <!-- build:js scripts/map.js -->
     <script src="scripts/map.js"></script>
+    <!-- endbuild -->
 
   </head>
   <body>
@@ -50,6 +51,42 @@
       </div><!-- /container -->
     </div> <!-- /headerwrap -->
 
+    <!-- WHAT'S HAPPENING -->
+    <div class="container">
+
+      <div class="row mt centered ">
+        <div class="col-lg-4 col-lg-offset-4">
+          <h3>What Is Happening?</h3>
+          <hr>
+        </div>
+      </div><!-- /row -->
+
+      <div class="row mt">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+          <p style="font-size:16px;">Members of the House4Hack hackerspace are going to ASE Tshakane on
+            <a href="http://wiki.softwarefreedomday.org/2014/SouthAfrica/Pretoria/SFD" target="_blank">Software Freedom Day</a>
+            to introduce kids of the school to technology.
+          </p>
+        </div><!--/col-lg-8 -->
+
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-bolt fa-4x"></i>
+          <h4>Electronic</h4>
+          <p>Demo of various projects, presentations on topics like robotics, arduino, and more.</p>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-code fa-4x"></i>
+          <h4>Programming</h4>
+          <p>Introductory talk on programming, and what they can achieve with code.</p>
+        </div>
+        <div class="col-lg-4 centered si">
+          <i class="fa fa-cogs fa-4x"></i>
+          <h4>3D Printing</h4>
+          <p>Introduce the Kids to the facinating world of 3D printing.</p>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+
     <div id="grey">
       <div class="container">
         <div class="row mt centered">
@@ -61,7 +98,7 @@
 
         <div class="row mt">
           <div class="col-lg-8 col-lg-offset-2 centered">
-            <p>African School for Excellence a non-profit organization developing a unique concept: a self-sustaining network of elite independent secondary schools that anyone can afford. The African School for Excellence model was designed specifically with the needs and challenges of African secondary school scholars in mind. By focusing on the key levers for quality and capitalizing on our scholars' existing strengths, we can both greatly increase quality and reduce cost, arriving at a world-class, affordable program.</p>
+            <p>African School for Excellence is a non-profit organization developing a unique concept: a self-sustaining network of elite independent secondary schools that anyone can afford. The African School for Excellence model was designed specifically with the needs and challenges of African secondary school scholars in mind. By focusing on the key levers for quality and capitalizing on our scholars' existing strengths, we can both greatly increase quality and reduce cost, arriving at a world-class, affordable program.</p>
           </div><!--/col-lg-8 -->
         </div><!-- /row -->
 
@@ -84,40 +121,11 @@
 
         <div class="row mt">
           <div class="col-lg-8 col-lg-offset-2 centered">
-            <p>Exposing the learners at ASE to empowering technologies like 3D printing, arduino, programming, open-source softwares, giving them an opportunity to learn those at their own pace. The way we do this is by leaving behing electronic kits, arduino, books, PCs, softwares, video tutorials, and more.</p>
+            <p>Exposing the learners at ASE to empowering technologies like 3D printing, arduino, programming, open-source software, giving them an opportunity to learn those at their own pace. The way we do this is by leaving behind electronic kits, arduino, books, PCs, software, video tutorials, and more.</p>
           </div><!--/col-lg-8 -->
         </div><!-- /row -->
       </div><!-- /container -->
     </div><!-- /black -->
-
-    <!-- WHAT'S HAPPENING -->
-    <!-- <div class="container">
-
-      <div class="row mt centered ">
-        <div class="col-lg-4 col-lg-offset-4">
-          <h3>What Is Happening?</h3>
-          <hr>
-        </div>
-      </div><!-- /row --/>
-
-      <div class="row mt">
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-bolt fa-4x"></i>
-          <h4>Electronic</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt in labore, ipsa totam, impedit, quos nulla sint eaque nam quis aspernatur ad ea. Ex error nihil iusto ipsum rem rerum.</p>
-        </div>
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-code fa-4x"></i>
-          <h4>Programming</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, praesentium veritatis quae. Veniam hic dignissimos a cum fuga, ut nihil odio totam quae maxime reiciendis, optio dolorem vel velit fugit.</p>
-        </div>
-        <div class="col-lg-4 centered si">
-          <i class="fa fa-cogs fa-4x"></i>
-          <h4>3D Printing</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolor ratione nulla vitae at, quia dolorem sed culpa quibusdam error. Repellat maxime autem minus totam ab reprehenderit deleniti a est.</p>
-        </div> -->
-      <!--</div><!-- /row -->
-    <!--</div><!-- /container -->
 
     <div id="white">
       <div class="container">
@@ -257,13 +265,12 @@
         <div class="row">
           <form id="form_id" action="/subscribe" method="post">
             <div class="col-sm-8">
-              <input type="email" placeholder="Enter your e-mail for more info" spellcheck="false" oldautocomplete="remove" autocomplete="off">
+              <input id="email" name="email" type="email" placeholder="Enter your e-mail for more info" spellcheck="false" oldautocomplete="remove" autocomplete="off">
             </div>
             <div class="col-sm-4">
-              <button type="button" class="btn btn-cta btn-lg" type=submit>Subscribe</button>
+              <button class="btn btn-cta btn-lg" type="submit">Subscribe</button>
             </div>
           </form>
-          <!-- <a href="#"><h4>Want to take part or have a fun project to show the kids? Drop us a line.</h4></a> -->
         </div>
       </div><!-- /container -->
     </div><!-- /cta-bar -->
@@ -275,7 +282,7 @@
           <p style="text-align:center;">
             &copy; 2014 <a href="http://www.house4hack.co.za" target="_blank">House4Hack</a>
           </p>
-        </div><! --/row -->
+        </div><!--/row -->
       </div><!-- /container -->
     </div><!-- /f -->
 
@@ -297,30 +304,11 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
-    <script src="bower_components/bootstrap/js/affix.js"></script>
-    <script src="bower_components/bootstrap/js/alert.js"></script>
-    <script src="bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="bower_components/bootstrap/js/modal.js"></script>
-    <script src="bower_components/bootstrap/js/transition.js"></script>
-    <script src="bower_components/bootstrap/js/button.js"></script>
-    <script src="bower_components/bootstrap/js/popover.js"></script>
-    <script src="bower_components/bootstrap/js/carousel.js"></script>
-    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="bower_components/bootstrap/js/collapse.js"></script>
-    <script src="bower_components/bootstrap/js/tab.js"></script>
     <script src="scripts/retina.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-
-    <!-- build:js scripts/map.js -->
-    <script src="scripts/map.js"></script>
-    <!-- endbuild -->
-
-
-
   </body>
 </html>
