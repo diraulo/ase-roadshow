@@ -11,9 +11,9 @@ function init() {
     zoom: 17,
 
     scrollwheel: false,
-
+)
     // The latitude and longitude to center the map (always required)
-    center: new google.maps.LatLng(-26.356684,28.363738), // ASE Tsakani, RSA
+    center: new google.maps.LatLng(-26.356454 , 28.358759), // ASE Tsakani, RSA
 
     // How you would like to style the map.
     // This is where you would paste any style found on Snazzy Maps.
