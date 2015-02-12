@@ -11,7 +11,7 @@ function init() {
     zoom: 17,
 
     scrollwheel: false,
-)
+
     // The latitude and longitude to center the map (always required)
     center: new google.maps.LatLng(-26.356454 , 28.358759), // ASE Tsakani, RSA
 
